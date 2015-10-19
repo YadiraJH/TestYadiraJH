@@ -1,0 +1,7 @@
+# v1.2 - support rythm template engine
+self: play -> menu 1.2
+
+require:
+    - play 1.2
+    - play -> secure
+    - play -> crud

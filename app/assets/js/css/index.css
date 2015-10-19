@@ -1,0 +1,29 @@
+
+fieldset{
+	color: black;
+    margin-top: 5em;
+    padding: 2em;
+    float:left;
+    width:40%;
+}
+
+#el05 {
+border:2px dotted #00f} /* Border width, style and colour */
+
+#divdel{
+  width:1200px;
+  height:400px;
+  float:left;
+}
+
+#divadd{
+  width:1200px; /* substract margin left & right values from it's width */
+  float:left;
+  display:inline; /* prevent ie6-double-margin bug */
+  margin:0 10px;
+}
+
+#wrapper {
+  width:581px;
+  float:left;
+}

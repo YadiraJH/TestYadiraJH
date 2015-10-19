@@ -1,0 +1,32 @@
+@(message: String)
+@main("AplicacionYadiraJH") {
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src='/assets/js/index.js'></script>
+    <link rel="stylesheet" type="text/css" href="/assets/js/css/index.css">
+	<h1 style="text-align:center;">Control de Alumnos</h1>
+	<br\>
+	<div id="wrapper">
+	<div id="divdel">
+		<fieldset class="center" id="el05">
+			<legend>Alumnos registrados</legend>
+			<ul id="liststudents"></ul>
+			<br\>
+			<form id="formdel" action="@routes.Application.delStudent()" method="post">
+				<button>Eliminar Alumno</button>
+			</form> 
+		</fieldset>
+	<div>
+	<div id="divadd">
+	<fieldset class="center" id="el05">
+        <legend>Ingrese los datos del Alumno</legend>
+        <form id="formadd" action="@routes.Application.addStudent()" method="post">
+            <p>Nombre:  <input type="text" name="name"> </p>
+            <p>Apellido:  <input type="text" name="lastname"></p>
+            <p>Semestre:  <input type="number" min="1" max="10" name="semester"><p/>
+            <button>Agregar Alumno</button>
+        </form> 
+		</fieldset>
+	</div>
+	</div>	
+}
+
